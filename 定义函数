@@ -1,0 +1,12 @@
+def print_lol (the_list):
+#定义一个函数名为print_lol，第一个参数为the_list
+    for each_item in the_list:
+    #the_list中的每一项，for/in循环搭配
+        if isinstance (each_item, list):
+        #判断each_item是否为列表
+            print_lol (each_item)
+            #递归
+        else:
+        #否则
+            print (each_item)
+            #输出each_item
